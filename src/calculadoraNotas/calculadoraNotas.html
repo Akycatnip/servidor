@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Notas</title>
+  </head>
+  <body>
+    <h1>Calculadora de Notas</h1>
+
+    <form action="calculadoraNotas.php" method="POST">
+      <label for="nombre">Nombre: </label>
+      <input type="text" id="nombre" name="nombre" required />
+      <br /><br />
+
+      <label for="nota1">Primera Nota</label>
+      <input type="number" step="any" id="nota1" name="notas[]" required />
+      <br /><br />
+
+      <label for="nota1">Segunda Nota</label>
+      <input type="number" step="any" id="nota2" name="notas[]" required />
+      <br /><br />
+
+      <label for="nota3">Tercera Nota</label>
+      <input type="number" step="any" id="nota3" name="notas[]" required />
+      <input type="submit" value="Calcular media" />
+    </form>
+  </body>
+</html>
