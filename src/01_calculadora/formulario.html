@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Calculadora</title></head>
+<body><h1>Calculadora</h1>
+<form action="procesar.php" method="post">
+<p><label>Primer número: <input type="number" name="a" step="any" required></label></p>
+<p><label>Segundo número: <input type="number" name="b" step="any" required></label></p>
+<p><label>Operación: <select name="operacion" required>
+<option value="sumar">Sumar</option><option value="restar">Restar</option>
+<option value="multiplicar">Multiplicar</option><option value="dividir">Dividir</option>
+</select></label></p>
+<p><button type="submit">Calcular</button></p>
+</form></body></html>

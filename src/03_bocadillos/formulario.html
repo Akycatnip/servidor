@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Pedido de bocadillos</title></head>
+<body><h1>Pedido de bocadillos</h1>
+<form action="procesar.php" method="post">
+<p><label>Cliente: <input type="text" name="nombre" required></label></p>
+<p><label>Bocadillo: <select name="tipo">
+<option value="tortilla">Tortilla</option><option value="pollo">Pollo</option>
+<option value="vegetal">Vegetal</option></select></label></p>
+<p><label>Cantidad: <input type="number" name="cantidad" min="1" max="10" step="1" required></label></p>
+<fieldset><legend>Extras por bocadillo</legend>
+<label><input type="checkbox" name="extras[]" value="queso">Queso</label>
+<label><input type="checkbox" name="extras[]" value="tomate">Tomate</label>
+<label><input type="checkbox" name="extras[]" value="salsa">Salsa</label>
+</fieldset>
+<p><button type="submit">Calcular</button></p>
+</form></body></html>
