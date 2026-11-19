@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Preferencias</title>
+</head>
+<body>
+
+<h1>Personaliza tu página</h1>
+
+<form action="guardar.php" method="POST">
+
+  <fieldset>
+    <legend>Elige un modo
+    </legend>
+
+    <label>
+      <input type="radio" name="modo" value="claro" required>
+      Claro
+    </label>
+
+    <label>
+      <input type="radio" name="modo" value="oscuro">
+      Oscuro
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Elige un idioma</legend>
+
+    <label>
+      <input type="radio" name="idioma" value="es" required>
+      Español
+    </label>
+
+    <label>
+      <input type="radio" name="idioma" value="en">
+      Inglés
+    </label>
+  </fieldset>
+
+  <button type="submit">Guardar preferencias</button>
+
+</form>
+
+</body>
+</html>

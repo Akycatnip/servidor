@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar una nota</title>
+</head>
+<body>
+    <h1>Registrar una nota en la bitácora</h1>
+
+    <form action="guardar.php" method="post">
+        <label for="nota">Nota (de 1 a 120 caracteres):</label>
+        <br>
+        <textarea id="nota" name="nota" rows="4" cols="50" maxlength="120" required></textarea>
+        <br>
+        <input type="submit" value="Guardar nota">
+    </form>
+
+    <p><a href="leer.php">Leer la bitácora</a></p>
+</body>
+</html>
