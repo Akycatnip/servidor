@@ -57,5 +57,20 @@ class Producto {
 
         return $this->stock ;
     }
+
+    //necesito una función getStock para hacer el ejercicio 4
+
+    public function getStock(): int
+    {
+        return $this->stock;
+    }
+
+    //y otra get precio
+
+
+    public function getPrecio(): int
+    {
+        return $this->precio;
+    }
 }
 
